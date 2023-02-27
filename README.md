@@ -1,6 +1,8 @@
+采用selenium，对知乎单个问题爬取所有回答并保存。  
+然后生成词云图。
 ### 1. 首先命令行运行以下代码
 知乎有检测机制，运行以下代码可以躲避。  
-第一个路径为Chrome浏览器的地址，可以右击桌面快捷方式查看
+第一个路径为Chrome浏览器的地址，可以右击桌面快捷方式查看。  
 第二个路径为临时文件保存地址，随便创建一个。
 ```shell
 cd C:/Program Files/Google/Chrome/Application
@@ -14,4 +16,8 @@ service = Service(r'C:\Users\caka\Desktop\文件\chromedriver.exe')
 ```python
 url = 'https://www.zhihu.com/question/404870865'
 ```
-### 4. 运行代码
+### 4. 启动爬虫，运行
+    selenium爬知乎文本.py
+### 5. 生成词云图，运行
+    词云.py
+![](wordcloud1.png)
